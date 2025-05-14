@@ -3,39 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Семантическая верстка</title>
+  <title>Сайт Данилейко Дмитрия</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
-    <h1>Сайт-визитка Лукиной Анны</h1>
-    <p>Завари себе кофию да надкуси булочку, почитывая мой блог</p>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Главная</a></li>
-        <li><a href="./blog.html">Блог</a></li>
-        <li><a href="./projects.html">Проекты</a></li>
-        <li><a href="./presentations.html">Доклады</a></li>
-        <li><a href="./resume.html">Резюмешечка для работодателей</a></li>
-
-      </ul>
+    <nav class="nav">
+        <nav_left class="nav_left">  
+            <li><a href="./index.html"><span>Danileyko</span></a></li>
+        </nav_left>
+        <nav_right class="nav_right">
+            <li><a href="./blog.html"><span>Blog</span></a></li>
+            <li><a href="./projects.html"><span>Projects</span></a></li>
+            <li><a class="active" href="./presentations.html"><span>Presentations</span></a></li>
+            <li><a href="./resume.html"><span>Resume</span></a></li>
+            <li><a href="./contacts.html"><span>Contacts</span></a></li>
+        </nav_right>
+        
     </nav>
   </header>
-  <main>
-    <h1>
-      Доклады
-    </h1>
-    <article>
-        <h2>Автотесты во фронтенде на Jest</h2>
-        <p>Понятно даже котиками</p>
-        <img width="200" height="200" src="./img/scale_1200.jpeg" alt="Воть моя фотокарточка">
+
+  <main class="main">
+    <article class="post-entry">
+      <header>
+        <h2 class="entry-header" >Презентация 1</h2>
+      </header>
+      <div class="entry-content">
+        <p>Информацию о чем и тд презентация.
+          <div></div><a class="active" href="./my_file/Презентация Microsoft PowerPoint.pptx" download>Скачать файл</a></div>
+      </div>
+      <footer class="entry-footer">
+        <div>Дата публикации: 2023-10-01</div>
+      </footer>
     </article>
+
+    <article class="post-entry">
+      <header>
+        <h2 class="entry-header" >Презентация 2</h2>
+      </header>
+      <div class="entry-content">
+        <p>Информацию о чем и тд презентация.
+          <div></div><a class="active" href="" download>Скачать файл</a></div>
+      </div>
+      <footer class="entry-footer">
+        <div>Дата публикации: 2023-10-01</div>
+      </footer>
+    </article>
+
   </main>
-  <footer>
-    <ol>
-      <li><a href="">Гитхаб</a></li>
-      <li><a href="">Телеграмм</a></li>
-      <li><a href="">Линкидин</a></li>
-    </ol>
-  </footer>
 </body>
 </html>
