@@ -3,51 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сайт Данилейко Дмитрия</title>
+  <title>Presentations | Danileyko</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
   <header>
-    <nav class="nav">
-        <nav_left class="nav_left">  
-            <li><a href="./index.html"><span>Danileyko</span></a></li>
-        </nav_left>
-        <nav_right class="nav_right">
-            <li><a href="./blog.html"><span>Blog</span></a></li>
-            <li><a href="./projects.html"><span>Projects</span></a></li>
-            <li><a class="active" href="./presentations.html"><span>Presentations</span></a></li>
-            <li><a href="./resume.html"><span>Resume</span></a></li>
-            <li><a href="./contacts.html"><span>Contacts</span></a></li>
-        </nav_right>
-        
-    </nav>
+    <nav class="navigation">
+        <div class="nav_brand"><li><a href="./index.html"><span>Danileyko</span></a></li></div>
+        <div class="nav_menu">
+            <a href="./blog.html"><span>Blog</span></a>
+            <a href="./projects.html"><span>Projects</span></a>
+            <a class="active" href="./presentations.html"><span>Presentations</span></a>
+            <a href="./resume.html"><span>Resume</span></a>
+            <a href="./contacts.html"><span>Contacts</span></a>
+        </div>
+      </nav>
   </header>
 
-  <main class="main">
-    <article class="post-entry">
-      <header>
-        <h2 class="entry-header" >Презентация 1</h2>
-      </header>
+  <main class="main tiles-container">
+
+    <article class="post-entry tile">
       <div class="entry-content">
-        <p>Информацию о чем и тд презентация.
-          <div></div><a class="active" href="./my_file/Презентация Microsoft PowerPoint.pptx" download>Скачать файл</a></div>
-      </div>
-      <footer class="entry-footer">
-        <div>Дата публикации: 2023-10-01</div>
-      </footer>
+          <h2 class="entry-header" >Презентация 1</h2>
+          <p>
+            Информацию о чем и тд презентация.
+          </p>
+          <a class="contact_ul" href="./my_file/Презентация Microsoft PowerPoint.pptx" download></a>
+          <div class="entry-footer">Дата публикации: 2023-10-01</div>
+        </div>
     </article>
 
-    <article class="post-entry">
-      <header>
-        <h2 class="entry-header" >Презентация 2</h2>
-      </header>
+    <article class="post-entry tile">
       <div class="entry-content">
-        <p>Информацию о чем и тд презентация.
-          <div></div><a class="active" href="" download>Скачать файл</a></div>
-      </div>
-      <footer class="entry-footer">
-        <div>Дата публикации: 2023-10-01</div>
-      </footer>
+          <h2 class="entry-header" >Презентация 2</h2>
+          <p>
+            Информацию о чем и тд презентация.
+          </p>
+          <a class="contact_ul" href="" download></a>
+          <div class="entry-footer">Дата публикации: 2023-10-01</div>
+        </div>
+    </article>
+
+    <article class="post-entry tile">
+      <div class="entry-content">
+          <h2 class="entry-header" >Презентация 3</h2>
+          <p>
+            Информацию о чем и тд презентация.
+          </p>
+          <a class="contact_ul" href="" download></a>
+          <div class="entry-footer">Дата публикации: 2023-10-01</div>
+        </div>
     </article>
 
   </main>

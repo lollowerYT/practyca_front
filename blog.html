@@ -3,36 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сайт Данилейко Дмитрия</title>
+  <title>Blog | Danileyko</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  
   <header>
-    <nav class="nav">
-        <nav_left class="nav_left">  
-            <li><a href="./index.html"><span>Danileyko</span></a></li>
-        </nav_left>
-       
-        <nav_right class="nav_right">
-            <li><a class="active" href="./blog.html"><span>Blog</span></a></li>
-            <li><a href="./projects.html"><span>Projects</span></a></li>
-            <li><a href="./presentations.html"><span>Presentations</span></a></li>
-            <li><a href="./resume.html"><span>Resume</span></a></li>
-            <li><a href="./contacts.html"><span>Contacts</span></a></li>
-        </nav_right>
-        
-    </nav>
+    <nav class="navigation">
+        <div class="nav_brand"><li><a href="./index.html"><span>Danileyko</span></a></li></div>
+        <div class="nav_menu">
+            <a class="active" href="./blog.html"><span>Blog</span></a>
+            <a href="./projects.html"><span>Projects</span></a>
+            <a href="./presentations.html"><span>Presentations</span></a>
+            <a href="./resume.html"><span>Resume</span></a>
+            <a href="./contacts.html"><span>Contacts</span></a>
+        </div>
+      </nav>
   </header>
 
   <main class="main">
+
     <h1>Blog</h1>
 
     <article class="post-entry">
-      <header>
-        <h2 class="entry-header" >Заголовок статьи</h2>
-      </header>
       <div class="entry-content">
-        <p>Вероятно, вам уже где-то попадались графики хайп-циклов 
+        <h2 class="entry-header" >Заголовок статьи</h2>
+        <p>
+          Вероятно, вам уже где-то попадались графики хайп-циклов 
           технологий от компании Gartner. Обычно они выглядят примерно так:
             Знаете, чего мы не видим на этом графике? Конца. Мы не видим, 
             как технология умирает. Видим, как она рождается, 
@@ -40,24 +37,20 @@
             начинают говорить, как она становится мейнстримом. 
             Но не то, как исчезает. А между тем, любую из технологий, 
             которые мы сегодня знаем и которыми восхищаемся, рано или 
-            поздно ждет смерть....</p>
+            поздно ждет смерть....
+        </p>
+        <div class="entry-footer">Дата публикации: 2023-10-01</div>
       </div>
-      <footer class="entry-footer">
-        <div>Дата публикации: 2023-10-01</div>
-      </footer>
     </article>
 
     <article class="post-entry">
-      <header>
-        <h2 class="entry-header" >Заголовок статьи 2</h2>
-      </header>
       <div class="entry-content">
-        <p>Статья.</p>
-        
+        <h2 class="entry-header" >Заголовок статьи</h2>
+        <p>
+          Текст статьи.
+        </p>
+        <div class="entry-footer">Дата публикации: 2023-10-01</div>
       </div>
-      <footer class="entry-footer">
-        <div>Дата публикации: 2023-10-01</div>
-      </footer>
     </article>
 
   </main>
