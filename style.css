@@ -55,6 +55,12 @@ a:hover {
   height: 100%;
   opacity: 0; 
 }
+.contact_text {
+  font-size: 1.2em;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
 
 
 /* Навигация */
@@ -114,6 +120,9 @@ a:hover {
 
 /* Карточки */
 .post-entry {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   background: var(--entry);
   border: 1px solid var(--border);
@@ -182,6 +191,39 @@ a:hover {
   font-size: 0.875em;
 }
 
+/* Карточки в резюме */
+.section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f9fae1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.section li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #313030;
+}
+
+.section strong {
+    color: #333;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
   .nav {
@@ -199,10 +241,20 @@ a:hover {
     transform: none;
     scale: 1.02;
   }
+  section {
+        width: 45%;
+        margin-right: 2%;
+        float: left;
+    }
+    
+    .section:nth-child(even) {
+        margin-right: 0;
+    }
 }
 
 @media (hover: none) {
   .post-entry:hover {
     transform: none !important;
   }
+  
 }
